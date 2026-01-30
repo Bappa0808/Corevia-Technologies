@@ -1,23 +1,21 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
-import { Users, Target, Lightbulb, Trophy } from 'lucide-react';
+import { Target, Lightbulb } from 'lucide-react';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import Card from '../components/ui/Card';
 
 const About = () => {
     const team = [
         {
             name: 'Bappa Bera',
             role: 'Lead Developer',
-            bio: 'Expert in full-stack development, specializing in building scalable web applications and modern user interfaces.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80' // Placeholder
+            bio: 'Expert in full-stack architectural systems, specializing in scalable web infrastructure.',
+            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80'
         },
         {
             name: 'Ankit Singh',
-            role: 'Manager & Marketing',
-            bio: 'Strategic thinker with a passion for digital marketing and business growth, ensuring client success.',
-            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80' // Placeholder
+            role: 'Strategic Director',
+            bio: 'Driving business growth through calculated digital transformation strategies.',
+            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80'
         }
     ];
 
@@ -25,73 +23,77 @@ const About = () => {
         <>
             <Helmet>
                 <title>About Us | Corevia Technologies</title>
-                <meta name="description" content="Learn about Corevia Technologies, our mission, vision, and the team driving digital innovation." />
+                <meta name="description" content="Corevia Technologies - Building digital permanence." />
             </Helmet>
 
             {/* Header */}
-            <section className="bg-slate-900 text-white py-20">
+            <section className="bg-primary text-white py-32">
                 <SectionWrapper>
-                    <div className="max-w-3xl">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">Driving Digital Innovation Since 2024</h1>
-                        <p className="text-xl text-slate-300">
-                            Corevia Technologies is a forward-thinking digital solutions agency dedicated to helping businesses thrive in the modern era.
+                    <div className="max-w-4xl">
+                        <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
+                        <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 leading-tight">Driving Innovation <br /> Since 2024</h1>
+                        <p className="text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                            Corevia Technologies is not just a digital agency; we are your partners in building a lasting digital legacy.
                         </p>
                     </div>
                 </SectionWrapper>
             </section>
 
             {/* Mission & Vision */}
-            <SectionWrapper>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div className="space-y-6">
-                        <div className="flex items-center space-x-4 mb-4">
-                            <div className="p-3 bg-blue-100 text-primary rounded-lg">
-                                <Target size={32} />
+            <SectionWrapper className="py-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div className="space-y-8">
+                        <div className="flex items-start space-x-6">
+                            <div className="p-4 border border-secondary/30 text-secondary rounded-none">
+                                <Target size={32} strokeWidth={1.5} />
                             </div>
-                            <h2 className="text-3xl font-bold text-slate-900">Our Mission</h2>
+                            <div>
+                                <h2 className="text-3xl font-serif font-bold text-primary mb-4">Our Mission</h2>
+                                <p className="text-appText-body text-lg font-light leading-relaxed">
+                                    To empower businesses with cutting-edge technology solutions that are scalable, secure, and user-centric. We believe in building digital products that stand as pillars of your success.
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-slate-600 text-lg leading-relaxed">
-                            To empower businesses with cutting-edge technology solutions that are scalable, secure, and user-centric. We believe in building digital products that not only look great but also drive real business results.
-                        </p>
                     </div>
-                    <div className="space-y-6">
-                        <div className="flex items-center space-x-4 mb-4">
-                            <div className="p-3 bg-purple-100 text-secondary rounded-lg">
-                                <Lightbulb size={32} />
+                    <div className="space-y-8">
+                        <div className="flex items-start space-x-6">
+                            <div className="p-4 border border-secondary/30 text-secondary rounded-none">
+                                <Lightbulb size={32} strokeWidth={1.5} />
                             </div>
-                            <h2 className="text-3xl font-bold text-slate-900">Our Vision</h2>
+                            <div>
+                                <h2 className="text-3xl font-serif font-bold text-primary mb-4">Our Vision</h2>
+                                <p className="text-appText-body text-lg font-light leading-relaxed">
+                                    To be the global benchmark in digital infrastructure, recognized for our commitment to precision, innovation, and unwavering quality.
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-slate-600 text-lg leading-relaxed">
-                            To be a global leader in digital transformation, recognized for our commitment to quality, innovation, and client success. We aim to bridge the gap between complex technology and business needs.
-                        </p>
                     </div>
                 </div>
             </SectionWrapper>
 
             {/* Team Section */}
-            <section className="bg-slate-50 py-20">
+            <section className="bg-background-alt py-24">
                 <SectionWrapper>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Meet Our Team</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
-                            The passionate minds behind Corevia Technologies.
-                        </p>
+                    <div className="text-center mb-20">
+                        <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block">Leadership</span>
+                        <h2 className="text-4xl font-serif font-bold text-primary mb-6">Meet The Team</h2>
+                        <div className="w-16 h-1 bg-secondary mx-auto"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                         {team.map((member, index) => (
-                            <Card key={index} className="overflow-hidden flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 p-6">
+                            <div key={index} className="flex flex-col md:flex-row items-center gap-8 bg-white p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100">
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-32 h-32 rounded-full object-cover border-4 border-slate-100 shadow-md"
+                                    className="w-32 h-32 object-cover grayscale hover:grayscale-0 transition-all duration-500"
                                 />
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-900">{member.name}</h3>
-                                    <p className="text-secondary font-medium mb-3">{member.role}</p>
-                                    <p className="text-slate-600 text-sm leading-relaxed">{member.bio}</p>
+                                <div className="text-center md:text-left">
+                                    <h3 className="text-2xl font-serif font-bold text-primary mb-1">{member.name}</h3>
+                                    <p className="text-secondary text-xs uppercase tracking-widest font-bold mb-4">{member.role}</p>
+                                    <p className="text-appText-body text-sm font-light leading-relaxed">{member.bio}</p>
                                 </div>
-                            </Card>
+                            </div>
                         ))}
                     </div>
                 </SectionWrapper>

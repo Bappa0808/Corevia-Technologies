@@ -2,11 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ExternalLink, Github } from 'lucide-react';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import Card from '../components/ui/Card';
-import Button from '../components/ui/Button';
 
 const Projects = () => {
+    // Project data remains the same...
     const projects = [
+        {
+            title: 'Ayat Interior Work',
+            description: 'Premium interior design website showcasing portfolio, services, and client testimonials with a modern aesthetic.',
+            tags: ['React', 'Tailwind CSS', 'Framer Motion'],
+            image: '/images/ayat-interior.png',
+            demoLink: 'https://www.ayatinteriorwork.in/',
+            repoLink: '#'
+        },
         {
             title: 'E-Commerce Platform',
             description: 'A full-featured online store with cart functionality, payment gateway integration, and admin dashboard.',
@@ -48,51 +55,57 @@ const Projects = () => {
                 <meta name="description" content="Check out our portfolio of successful projects including e-commerce sites, web applications, and custom software solutions." />
             </Helmet>
 
-            <section className="bg-slate-900 text-white py-20 text-center">
+            {/* Header */}
+            <section className="bg-primary text-white py-32">
                 <SectionWrapper>
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Work</h1>
-                    <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                        A selection of projects that demonstrate our expertise and commitment to quality.
+                    <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Portfolio</span>
+                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8">Selected Works</h1>
+                    <p className="text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                        A showcase of our digital craftsmanship. We build platforms that define brands and drive growth.
                     </p>
                 </SectionWrapper>
             </section>
 
-            <SectionWrapper>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {projects.map((project, index) => (
-                        <Card key={index} className="overflow-hidden group flex flex-col h-full hover:shadow-2xl transition-all duration-300 border-none ring-1 ring-slate-100">
-                            <div className="relative overflow-hidden h-64">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                                    <a href={project.demoLink} className="p-3 bg-white text-slate-900 rounded-full hover:bg-secondary hover:text-white transition-colors" title="View Demo">
-                                        <ExternalLink size={24} />
-                                    </a>
-                                    <a href={project.repoLink} className="p-3 bg-white text-slate-900 rounded-full hover:bg-secondary hover:text-white transition-colors" title="View Code">
-                                        <Github size={24} />
-                                    </a>
+            {/* Projects Array */}
+            <section className="bg-background-default py-24">
+                <SectionWrapper>
+                    <div className="space-y-32">
+                        {projects.map((project, index) => (
+                            <div key={index} className={`flex flex-col lg:flex-row gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                                {/* Image */}
+                                <div className="w-full lg:w-3/5 group relative overflow-hidden shadow-2xl">
+                                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors duration-500 z-10"></div>
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                                    />
+                                    <div className="absolute bottom-0 left-0 bg-primary text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex gap-4">
+                                        <a href={project.demoLink} className="hover:text-secondary"><ExternalLink /></a>
+                                        <a href={project.repoLink} className="hover:text-secondary"><Github /></a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">{project.title}</h3>
-                                <p className="text-slate-600 mb-6 flex-grow">{project.description}</p>
-                                <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.tags.map((tag, i) => (
-                                        <span key={i} className="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">
-                                            {tag}
-                                        </span>
-                                    ))}
+                                {/* Content */}
+                                <div className="w-full lg:w-2/5">
+                                    <div className="flex flex-wrap gap-3 mb-6">
+                                        {project.tags.map((tag, i) => (
+                                            <span key={i} className="text-xs font-bold uppercase tracking-widest text-secondary border border-secondary/30 px-3 py-1">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <h3 className="text-3xl font-serif font-bold text-primary mb-6">{project.title}</h3>
+                                    <p className="text-appText-body text-lg font-light leading-relaxed mb-8">
+                                        {project.description}
+                                    </p>
+                                    <div className="h-px w-24 bg-secondary"></div>
                                 </div>
-                                <Button variant="outline" className="w-full">View Case Study</Button>
                             </div>
-                        </Card>
-                    ))}
-                </div>
-            </SectionWrapper>
+                        ))}
+                    </div>
+                </SectionWrapper>
+            </section>
         </>
     );
 };
