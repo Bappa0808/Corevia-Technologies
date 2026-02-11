@@ -10,60 +10,60 @@ const Services = () => {
     const services = [
         {
             icon: Globe,
-            title: 'Website Development',
-            description: 'Full-stack web development tailored to your brand. We create fast, responsive, and SEO-friendly websites using the latest technologies.'
+            title: 'Property Website Development',
+            description: 'Custom real estate websites with advanced property listings, search filters, virtual tours, and lead capture systems.'
         },
         {
             icon: Layout,
-            title: 'Single Landing Pages',
-            description: 'High-converting landing pages designed to capture leads and showcase your specific product or service effectively.'
+            title: 'Agent Landing Pages',
+            description: 'High-converting landing pages designed specifically for real estate agents to showcase properties and capture client inquiries.'
         },
         {
             icon: Lock,
-            title: 'Login & Auth Systems',
-            description: 'Secure and robust authentication systems including multi-factor authentication, social logins, and role-based access control.'
+            title: 'Secure Client Portals',
+            description: 'Protected authentication systems for property management platforms with client access, document sharing, and communication tools.'
         },
         {
             icon: BarChart,
-            title: 'Professional Dashboards',
-            description: 'Data-rich, interactive admin dashboards to manage your business operations, visualize data, and track performance metrics.'
+            title: 'Real Estate Dashboards',
+            description: 'Comprehensive property management dashboards with analytics, market insights, listing management, and performance tracking.'
         },
         {
             icon: ShoppingBag,
-            title: 'Corporate Solutions',
-            description: 'Tailored solutions for corporate entities, enhancing digital presence with professional design and functionality.'
+            title: 'Corporate Real Estate Solutions',
+            description: 'Enterprise-grade platforms for real estate firms, property developers, and agencies to manage portfolios and global operations.'
         },
         {
             icon: Code,
-            title: 'Portfolio Websites',
-            description: 'Stunning portfolio sites for creatives and professionals to showcase their work and skills to the world.'
+            title: 'Agent Portfolio Sites',
+            description: 'Professional portfolio websites for real estate agents to showcase sold properties, testimonials, and establish credibility.'
         },
         {
             icon: Search,
-            title: 'SEO Optimization',
-            description: 'Technical SEO services to improve your search engine rankings, drive organic traffic, and increase visibility.'
+            title: 'SEO for Real Estate',
+            description: 'Specialized SEO strategies for real estate businesses to rank for local and international property searches and attract qualified buyers.'
         },
         {
             icon: Wrench,
-            title: 'Maintenance & Support',
-            description: 'Ongoing website maintenance, updates, and technical support to keep your digital assets running smoothly and securely.'
+            title: 'Website Maintenance',
+            description: 'Dedicated support and maintenance for your real estate website, ensuring listings stay updated and the platform runs smoothly.'
         }
     ];
 
     return (
         <>
             <Helmet>
-                <title>Our Services | Corevia Technologies</title>
-                <meta name="description" content="Explore our wide range of web development services including custom websites, landing pages, SEO, and more." />
+                <title>Our Services | EstateWebly</title>
+                <meta name="description" content="Explore our comprehensive real estate digital solutions including property websites, agent portals, CRM systems, and global market expansion tools." />
             </Helmet>
 
             {/* Hero */}
-            <section className="bg-primary text-white py-32 text-center">
+            <section className="bg-gradient-to-br from-primary via-primary to-[#152d47] text-white py-32 text-center">
                 <SectionWrapper>
-                    <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Our Expertise</span>
-                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8">Premium Services</h1>
-                    <p className="text-xl text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
-                        We deliver top-tier digital solutions tailored to your unique business requirements. Excellence is our standard.
+                    <span className="text-[#f4b942] font-bold tracking-widest uppercase text-sm mb-4 block drop-shadow-md">Our Expertise</span>
+                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-white drop-shadow-lg">Real Estate Solutions</h1>
+                    <p className="text-xl text-slate-100 font-light max-w-2xl mx-auto leading-relaxed">
+                        We deliver world-class digital solutions designed specifically for the global real estate market.
                     </p>
                 </SectionWrapper>
             </section>
@@ -90,9 +90,9 @@ const Services = () => {
                         <Code size={200} />
                     </div>
                     <div className="relative z-10 max-w-3xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Need a Custom Solution?</h2>
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Need a Custom Real Estate Solution?</h2>
                         <p className="text-slate-300 mb-10 text-lg font-light leading-relaxed">
-                            We understand that every business is unique. Contact us to discuss your specific requirements and get a tailored quote.
+                            We understand that every real estate business is unique. Contact us to discuss your specific requirements and get a tailored solution.
                         </p>
                         <Link to="/contact">
                             <Button className="px-10 py-4 bg-secondary text-white hover:bg-white hover:text-primary transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-lg">

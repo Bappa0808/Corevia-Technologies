@@ -26,8 +26,8 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Corevia Technologies | Building the Future of Infrastructure</title>
-                <meta name="description" content="Corevia Technologies - Premium development/infrastructure solutions. We build the future with excellence and innovation." />
+                <title>EstateWebly | Transforming Real Estate Globally</title>
+                <meta name="description" content="EstateWebly - Global real estate digitalization platform. We help property businesses grow and reach global markets through innovative technology." />
             </Helmet>
 
             {/* Hero Section */}
@@ -35,7 +35,7 @@ const Home = () => {
                 {/* Background Image with Parallax-like fixed feel (if supported) or strict cover */}
                 <div
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop')" }}
+                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2673&auto=format&fit=crop')" }}
                 ></div>
 
                 {/* Overlay - Gradient for depth */}
@@ -49,13 +49,13 @@ const Home = () => {
                         className="max-w-4xl mx-auto"
                     >
                         <motion.h2 variants={fadeInUp} className="text-secondary font-sans font-bold tracking-[0.2em] uppercase text-sm md:text-base mb-6">
-                            Constructing Excellence
+                            Empowering Real Estate
                         </motion.h2>
                         <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-serif font-bold text-white mb-8 leading-tight">
-                            Building the <span className="italic font-light">Future</span> <br /> of Infrastructure
+                            Transforming <span className="italic font-light">Real Estate</span> <br /> Globally
                         </motion.h1>
                         <motion.p variants={fadeInUp} className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-                            We deliver premium engineering and digital solutions that stand the test of time. Innovation meets permanence.
+                            We digitalize real estate businesses worldwide, helping you grow and reach global markets with cutting-edge technology solutions.
                         </motion.p>
                         <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-6">
                             <Link to="/projects">
@@ -80,18 +80,18 @@ const Home = () => {
             <SectionWrapper id="services" className="bg-background-default py-24">
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-2 block">What We Do</span>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Premium Services</h2>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Real Estate Solutions</h2>
                     <div className="w-24 h-1 bg-secondary mx-auto mb-6"></div>
                     <p className="text-appText-body text-lg font-light leading-relaxed">
-                        Comprehensive solutions tailored for high-growth enterprises.
+                        Comprehensive digital solutions tailored for real estate businesses worldwide.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
                     {[
-                        { icon: Globe, title: 'Web Development', desc: 'Custom enterprise platforms built for scale and security.' },
-                        { icon: Smartphone, title: 'Digital Experience', desc: 'Seamless interfaces designed for the modern user.' },
-                        { icon: Database, title: 'Infrastructure', desc: 'Robust backend systems driving your business logic.' },
+                        { icon: Globe, title: 'Property Websites', desc: 'Custom real estate websites with advanced listing capabilities and search functionality.' },
+                        { icon: Smartphone, title: 'Global Market Reach', desc: 'Connect your properties to international buyers and expand globally.' },
+                        { icon: Database, title: 'Property Management', desc: 'Powerful CRM and management systems for modern real estate businesses.' },
                     ].map((service, index) => (
                         <Card key={index} className="group relative p-10 bg-white border border-slate-100 hover:border-secondary/30 hover:shadow-2xl transition-all duration-500 rounded-none">
                             <div className="absolute top-0 left-0 w-full h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
@@ -150,9 +150,9 @@ const Home = () => {
             <section className="bg-primary text-white py-24 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
                 <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 leading-tight">Ready to Build Your Vision?</h2>
+                    <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 leading-tight">Grow Your Real Estate Business Globally</h2>
                     <p className="text-lg text-slate-400 mb-12 font-light max-w-2xl mx-auto">
-                        Partner with Corevia Technologies for world-class digital infrastructure.
+                        Partner with EstateWebly to transform your real estate business with world-class digital solutions.
                     </p>
                     <Link to="/contact">
                         <Button className="px-12 py-5 bg-secondary text-white hover:bg-white hover:text-primary transition-all duration-300 uppercase tracking-widest text-sm font-bold shadow-2xl">

@@ -33,8 +33,8 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us | Corevia Technologies</title>
-                <meta name="description" content="Get in touch with Corevia Technologies for your next web development project. We're here to help you grow your business." />
+                <title>Contact Us | EstateWebly</title>
+                <meta name="description" content="Get in touch with EstateWebly for your real estate digital transformation. We're here to help you grow your property business globally." />
             </Helmet>
 
             <section className="bg-primary text-white py-32 text-center">
@@ -42,7 +42,7 @@ const Contact = () => {
                     <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Get In Touch</span>
                     <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8">Start The Conversation</h1>
                     <p className="text-xl text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
-                        Ready to build something permanent? We are here to listen and engineer your vision.
+                        Ready to transform your real estate business globally? We are here to listen and help you grow.
                     </p>
                 </SectionWrapper>
             </section>
@@ -54,7 +54,7 @@ const Contact = () => {
                         <div>
                             <h2 className="text-3xl font-serif font-bold text-primary mb-6">Contact Information</h2>
                             <p className="text-appText-body text-lg font-light leading-relaxed mb-8">
-                                Fill out the form or reach out to us directly. We value direct communication and transparent partnerships.
+                                Fill out the form or reach out to us directly. We value transparent partnerships with real estate businesses worldwide.
                             </p>
                         </div>
 
@@ -65,7 +65,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-secondary font-bold uppercase tracking-widest mb-1">Email Us</p>
-                                    <p className="text-xl font-serif font-bold text-primary">hello@coreviatech.com</p>
+                                    <p className="text-xl font-serif font-bold text-primary">hello@estatewebly.com</p>
                                 </div>
                             </div>
 

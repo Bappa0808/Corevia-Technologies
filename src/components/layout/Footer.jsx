@@ -14,11 +14,11 @@ const Footer = () => {
                     <div className="space-y-6">
                         <Link to="/" className="group inline-block">
                             <span className="text-2xl font-bold font-serif text-white tracking-tight">
-                                COREVIA<span className="text-secondary">.</span>
+                                ESTATEWEBLY<span className="text-secondary">.</span>
                             </span>
                         </Link>
                         <p className="text-sm leading-relaxed text-slate-400 font-light">
-                            Empowering enterprises with architectural-grade digital solutions. We build the stable foundations for your future growth.
+                            Transforming real estate businesses globally through digital innovation. We help you reach global markets and grow your property business.
                         </p>
                     </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-sm font-light">
                             <li className="flex items-start space-x-3">
                                 <Mail size={18} className="text-secondary shrink-0 mt-0.5" />
-                                <span>hello@coreviatech.com</span>
+                                <span>hello@estatewebly.com</span>
                             </li>
                             <li className="flex items-start space-x-3">
                                 <Phone size={18} className="text-secondary shrink-0 mt-0.5" />
@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 uppercase tracking-wider">
-                    <p>&copy; {currentYear} Corevia Technologies. All rights reserved.</p>
+                    <p>&copy; {currentYear} EstateWebly. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-secondary transition-colors">Terms of Service</a>

@@ -45,7 +45,7 @@ const Navbar = () => {
                     <Link to="/" className="group relative z-50">
                         <span className={`text-2xl font-bold font-serif tracking-tight transition-colors duration-300 ${isTransparent ? 'text-white' : 'text-white'
                             }`}>
-                            COREVIA
+                            ESTATEWEBLY
                             <span className="text-secondary">.</span>
                         </span>
                     </Link>

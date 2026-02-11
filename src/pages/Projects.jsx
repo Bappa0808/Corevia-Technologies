@@ -51,17 +51,17 @@ const Projects = () => {
     return (
         <>
             <Helmet>
-                <title>Our Projects | Corevia Technologies</title>
-                <meta name="description" content="Check out our portfolio of successful projects including e-commerce sites, web applications, and custom software solutions." />
+                <title>Our Projects | EstateWebly</title>
+                <meta name="description" content="Explore our portfolio of successful real estate digital projects including property websites, agent portals, and real estate platforms." />
             </Helmet>
 
             {/* Header */}
-            <section className="bg-primary text-white py-32">
+            <section className="bg-gradient-to-br from-primary via-primary to-[#152d47] text-white py-32">
                 <SectionWrapper>
-                    <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Portfolio</span>
-                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8">Selected Works</h1>
-                    <p className="text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
-                        A showcase of our digital craftsmanship. We build platforms that define brands and drive growth.
+                    <span className="text-[#f4b942] font-bold tracking-widest uppercase text-sm mb-4 block drop-shadow-md">Portfolio</span>
+                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-white drop-shadow-lg">Selected Works</h1>
+                    <p className="text-xl text-slate-100 font-light max-w-2xl leading-relaxed">
+                        A showcase of real estate digital transformations. We build platforms that connect properties to global markets.
                     </p>
                 </SectionWrapper>
             </section>

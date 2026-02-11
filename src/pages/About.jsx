@@ -22,8 +22,8 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>About Us | Corevia Technologies</title>
-                <meta name="description" content="Corevia Technologies - Building digital permanence." />
+                <title>About Us | EstateWebly</title>
+                <meta name="description" content="EstateWebly - Empowering real estate businesses to reach global markets through digital transformation." />
             </Helmet>
 
             {/* Header */}
@@ -31,9 +31,9 @@ const About = () => {
                 <SectionWrapper>
                     <div className="max-w-4xl">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Our Story</span>
-                        <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 leading-tight">Driving Innovation <br /> Since 2024</h1>
+                        <h1 className="text-5xl md:text-6xl font-serif font-bold mb-8 leading-tight">Transforming Real Estate <br /> Since 2024</h1>
                         <p className="text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
-                            Corevia Technologies is not just a digital agency; we are your partners in building a lasting digital legacy.
+                            EstateWebly is your global partner in real estate digital transformation, helping property businesses reach new markets worldwide.
                         </p>
                     </div>
                 </SectionWrapper>
@@ -50,7 +50,7 @@ const About = () => {
                             <div>
                                 <h2 className="text-3xl font-serif font-bold text-primary mb-4">Our Mission</h2>
                                 <p className="text-appText-body text-lg font-light leading-relaxed">
-                                    To empower businesses with cutting-edge technology solutions that are scalable, secure, and user-centric. We believe in building digital products that stand as pillars of your success.
+                                    To empower real estate businesses worldwide with innovative digital solutions that connect properties to global markets, streamline operations, and drive sustainable growth.
                                 </p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const About = () => {
                             <div>
                                 <h2 className="text-3xl font-serif font-bold text-primary mb-4">Our Vision</h2>
                                 <p className="text-appText-body text-lg font-light leading-relaxed">
-                                    To be the global benchmark in digital infrastructure, recognized for our commitment to precision, innovation, and unwavering quality.
+                                    To be the world's leading digital platform for real estate professionals, making global property markets accessible and enabling businesses to thrive internationally.
                                 </p>
                             </div>
                         </div>
