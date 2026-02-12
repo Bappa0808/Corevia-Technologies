@@ -1,21 +1,884 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EstateWebly - Global Real Estate Digitalization</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EstateWebly - Digital Growth Solutions for Real Estate Brands</title>
+  <meta name="description"
+    content="We build high-converting real estate websites, CRM systems and performance marketing campaigns that generate qualified property leads.">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919674994033" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Sticky CTA Button -->
+  <div class="sticky-cta" id="stickyCTA">
+    <a href="#contact" class="btn-sticky">
+      <i class="fas fa-calendar-check"></i> Get Free Strategy Call
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="logo-icon">🏢</span>
+          <span class="logo-text">Estate<span class="highlight">Webly</span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Results</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title animate-fade-up">
+            Digital Growth Solutions for <span class="gradient-text">Real Estate Brands</span>
+          </h1>
+          <p class="hero-subtitle animate-fade-up delay-1">
+            We build high-converting real estate websites, CRM systems and performance marketing campaigns that generate
+            qualified property leads.
+          </p>
+          <div class="hero-cta animate-fade-up delay-2">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-phone-alt"></i> Get Free Strategy Call
+            </a>
+            <a href="#case-studies" class="btn btn-secondary">
+              <i class="fas fa-chart-line"></i> View Our Work
+            </a>
+          </div>
+          <div class="hero-stats animate-fade-up delay-3">
+            <div class="stat-item">
+              <span class="stat-number" data-target="150">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="98">0</span><span class="stat-symbol">%</span>
+              <span class="stat-label">Retention</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5000">0</span><span class="stat-symbol">+</span>
+              <span class="stat-label">Leads Generated</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image animate-fade-left">
+          <div class="hero-card">
+            <div class="card-glow"></div>
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+              alt="Modern Real Estate" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Trusted By Section -->
+  <section class="trusted-by">
+    <div class="container">
+      <p class="trusted-text">Trusted by Leading Real Estate Developers</p>
+      <div class="trusted-logos">
+        <div class="logo-item">DLF</div>
+        <div class="logo-item">Godrej Properties</div>
+        <div class="logo-item">Prestige Group</div>
+        <div class="logo-item">Brigade Group</div>
+        <div class="logo-item">Sobha Limited</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Property Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Advanced Technology</span>
+        <h2 class="section-title">Property Features That <span class="gradient-text">Convert Visitors</span></h2>
+        <p class="section-subtitle">Cutting-edge tools that engage buyers and generate qualified leads</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search-location"></i>
+          </div>
+          <h3>Advanced Property Search</h3>
+          <p>Smart filters by location, budget, BHK, amenities with real-time results and saved searches</p>
+          <div class="feature-badge">High Engagement</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Interactive Map Integration</h3>
+          <p>Google Maps with property markers, nearby amenities, and distance calculator</p>
+          <div class="feature-badge">Location Intel</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>Property Comparison</h3>
+          <p>Side-by-side comparison of properties with features, pricing, and amenities</p>
+          <div class="feature-badge">Decision Tool</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>EMI & ROI Calculator</h3>
+          <p>Instant loan EMI calculations and investment ROI projections with visual charts</p>
+          <div class="feature-badge">Financial Planning</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <h3>Virtual Tour Integration</h3>
+          <p>360° virtual walkthroughs and immersive property experiences</p>
+          <div class="feature-badge">Immersive</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Lead Capture Forms</h3>
+          <p>Smart forms with auto-follow-up and CRM integration for instant lead nurturing</p>
+          <div class="feature-badge">Conversion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Complete Digital Solutions for <span class="gradient-text">Real Estate</span></h2>
+        <p class="section-subtitle">End-to-end services that drive growth and generate quality leads</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Real Estate Website Development</h3>
+          <p>Custom-built, high-converting websites with advanced property search, virtual tours, and lead generation
+            systems</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+            <li><i class="fas fa-check"></i> SEO Optimized</li>
+            <li><i class="fas fa-check"></i> Lead Capture Forms</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <h3>Real Estate CRM Development</h3>
+          <p>Powerful CRM systems to manage leads, track sales pipeline, and automate follow-ups for maximum conversions
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Lead Management</li>
+            <li><i class="fas fa-check"></i> Sales Pipeline</li>
+            <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+            <li><i class="fas fa-check"></i> Task Automation</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Lead Automation System</h3>
+          <p>Intelligent automation for lead capture, qualification, nurturing, and conversion with WhatsApp & Email
+            integration</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Auto Lead Capture</li>
+            <li><i class="fas fa-check"></i> Smart Qualification</li>
+            <li><i class="fas fa-check"></i> WhatsApp Automation</li>
+            <li><i class="fas fa-check"></i> Email Sequences</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Performance Marketing</h3>
+          <p>Data-driven Google Ads & Meta campaigns optimized for qualified property leads and maximum ROI</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Google Ads</li>
+            <li><i class="fas fa-check"></i> Facebook & Instagram Ads</li>
+            <li><i class="fas fa-check"></i> Retargeting Campaigns</li>
+            <li><i class="fas fa-check"></i> Performance Tracking</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>SEO for Real Estate</h3>
+          <p>Strategic SEO to rank for high-intent property keywords and dominate local real estate searches</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Keyword Research</li>
+            <li><i class="fas fa-check"></i> On-Page SEO</li>
+            <li><i class="fas fa-check"></i> Local SEO</li>
+            <li><i class="fas fa-check"></i> Content Strategy</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-number">06</div>
+          <div class="service-icon">
+            <i class="fas fa-funnel-dollar"></i>
+          </div>
+          <h3>Landing Page & Funnel Creation</h3>
+          <p>High-converting landing pages and sales funnels optimized for property inquiries and site visits</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> A/B Testing</li>
+            <li><i class="fas fa-check"></i> Conversion Optimization</li>
+            <li><i class="fas fa-check"></i> Fast Loading</li>
+            <li><i class="fas fa-check"></i> Mobile Optimized</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="case-studies" id="case-studies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proven Results</span>
+        <h2 class="section-title">Real Impact, <span class="gradient-text">Real Numbers</span></h2>
+        <p class="section-subtitle">Our data-driven approach delivers measurable growth for real estate businesses</p>
+      </div>
+      <div class="case-studies-grid">
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="3">0</span><span class="metric-symbol">X</span>
+          </div>
+          <h3>Lead Growth in 60 Days</h3>
+          <p>Premium residential project in Bangalore saw 3X increase in qualified property inquiries</p>
+          <div class="case-tags">
+            <span class="tag">SEO</span>
+            <span class="tag">Google Ads</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="247">0</span><span class="metric-symbol">%</span>
+          </div>
+          <h3>ROI from Google Ads</h3>
+          <p>Luxury villa project achieved 247% return on ad spend with strategic campaign optimization</p>
+          <div class="case-tags">
+            <span class="tag">PPC</span>
+            <span class="tag">Landing Pages</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-percentage"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="35">0</span><span class="metric-symbol">%</span>
+          </div>
+          <h3>Reduction in Cost Per Lead</h3>
+          <p>Commercial property developer reduced CPL by 35% through targeted ad optimization</p>
+          <div class="case-tags">
+            <span class="tag">Meta Ads</span>
+            <span class="tag">Retargeting</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="1200">0</span><span class="metric-symbol">+</span>
+          </div>
+          <h3>Qualified Property Leads</h3>
+          <p>Generated 1200+ verified leads for multi-property real estate portfolio in 90 days</p>
+          <div class="case-tags">
+            <span class="tag">Website</span>
+            <span class="tag">CRM</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-mouse-pointer"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="18">0</span><span class="metric-symbol">%</span>
+          </div>
+          <h3>Landing Page Conversion Rate</h3>
+          <p>Achieved industry-leading 18% conversion rate on property inquiry landing pages</p>
+          <div class="case-tags">
+            <span class="tag">Design</span>
+            <span class="tag">UX</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">
+            <i class="fas fa-instagram"></i>
+          </div>
+          <div class="case-metric">
+            <span class="metric-number" data-target="180">0</span><span class="metric-symbol">%</span>
+          </div>
+          <h3>Instagram Engagement Increase</h3>
+          <p>Boosted social engagement by 180% for luxury property brand through strategic content</p>
+          <div class="case-tags">
+            <span class="tag">Social Media</span>
+            <span class="tag">Content</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose EstateWebly -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why EstateWebly</span>
+        <h2 class="section-title">Your Trusted <span class="gradient-text">Growth Partner</span></h2>
+        <p class="section-subtitle">Industry expertise meets cutting-edge technology</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Real Estate Industry Expertise</h3>
+          <p>7+ years specializing exclusively in real estate digital marketing and technology solutions</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Automation Driven Systems</h3>
+          <p>Proprietary lead automation and CRM systems that work 24/7 to capture and nurture leads</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Dedicated Account Manager</h3>
+          <p>Your personal success manager available for strategy calls, updates, and optimization</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Transparent Reporting</h3>
+          <p>Real-time dashboards with complete visibility into leads, conversions, and campaign performance</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>98% Client Retention</h3>
+          <p>Industry-leading retention rate from developers who see consistent results and ROI</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Driven Strategy</h3>
+          <p>Every decision backed by analytics, A/B testing, and conversion rate optimization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRM Dashboard Preview -->
+  <section class="crm-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technology Platform</span>
+        <h2 class="section-title">Powerful <span class="gradient-text">CRM Dashboard</span></h2>
+        <p class="section-subtitle">Complete visibility and control over your real estate sales pipeline</p>
+      </div>
+      <div class="crm-showcase">
+        <div class="crm-features-list">
+          <div class="crm-feature-item active" data-panel="leads">
+            <div class="crm-feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="crm-feature-content">
+              <h4>Lead Pipeline</h4>
+              <p>Track every lead from inquiry to closure</p>
+            </div>
+          </div>
+          <div class="crm-feature-item" data-panel="sales">
+            <div class="crm-feature-icon">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <div class="crm-feature-content">
+              <h4>Sales Dashboard</h4>
+              <p>Real-time sales metrics and forecasting</p>
+            </div>
+          </div>
+          <div class="crm-feature-item" data-panel="properties">
+            <div class="crm-feature-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="crm-feature-content">
+              <h4>Property Management</h4>
+              <p>Manage listings, inventory, and pricing</p>
+            </div>
+          </div>
+          <div class="crm-feature-item" data-panel="analytics">
+            <div class="crm-feature-icon">
+              <i class="fas fa-analytics"></i>
+            </div>
+            <div class="crm-feature-content">
+              <h4>Analytics Tracking</h4>
+              <p>Campaign performance and ROI insights</p>
+            </div>
+          </div>
+        </div>
+        <div class="crm-dashboard-preview">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">EstateWebly CRM</span>
+            </div>
+            <div class="mockup-content">
+              <div class="dashboard-stats">
+                <div class="stat-box">
+                  <span class="stat-label">Total Leads</span>
+                  <span class="stat-value">487</span>
+                  <span class="stat-trend positive">+23%</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Conversions</span>
+                  <span class="stat-value">89</span>
+                  <span class="stat-trend positive">+15%</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Revenue</span>
+                  <span class="stat-value">₹45L</span>
+                  <span class="stat-trend positive">+31%</span>
+                </div>
+              </div>
+              <div class="dashboard-chart">
+                <div class="chart-placeholder">
+                  <div class="chart-bar" style="height: 60%"></div>
+                  <div class="chart-bar" style="height: 80%"></div>
+                  <div class="chart-bar" style="height: 45%"></div>
+                  <div class="chart-bar" style="height: 90%"></div>
+                  <div class="chart-bar" style="height: 70%"></div>
+                  <div class="chart-bar" style="height: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Success</span>
+        <h2 class="section-title">What Our Clients <span class="gradient-text">Say</span></h2>
+        <p class="section-subtitle">Trusted by leading real estate developers and builders</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"EstateWebly transformed our digital presence. Their CRM system and automated lead
+            nurturing increased our conversions by 250%. Best investment we made!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div class="author-info">
+              <h4>Rajesh Sharma</h4>
+              <p>CEO, Skyline Developers</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The Google Ads campaigns delivered exceptional ROI. We generated 500+ qualified
+            leads in 60 days with 40% lower cost per lead than our previous agency."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PG</div>
+            <div class="author-info">
+              <h4>Priya Gupta</h4>
+              <p>Marketing Head, Urban Estates</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Outstanding service! Their real estate website with virtual tours and EMI
+            calculator significantly improved user engagement. Our site visits increased by 180%."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div class="author-info">
+              <h4>Amit Kumar</h4>
+              <p>Director, Premium Properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Investment Plans</span>
+        <h2 class="section-title">Choose Your <span class="gradient-text">Growth Plan</span></h2>
+        <p class="section-subtitle">Flexible packages designed for real estate businesses of all sizes</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <p>Perfect for new projects</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>
+            <span class="amount">8,000</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Custom Real Estate Website</li>
+            <li><i class="fas fa-check"></i> Property Listing (Up to 50)</li>
+            <li><i class="fas fa-check"></i> Basic Lead Capture Forms</li>
+            <li><i class="fas fa-check"></i> Google Maps Integration</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+            <li><i class="fas fa-check"></i> Email Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Growth</h3>
+            <p>For scaling developers</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>
+            <span class="amount">20,000</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Everything in Starter</li>
+            <li><i class="fas fa-check"></i> Custom CRM System</li>
+            <li><i class="fas fa-check"></i> Unlimited Property Listings</li>
+            <li><i class="fas fa-check"></i> Lead Automation System</li>
+            <li><i class="fas fa-check"></i> Virtual Tour Integration</li>
+            <li><i class="fas fa-check"></i> EMI & ROI Calculator</li>
+            <li><i class="fas fa-check"></i> Google Ads Management</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <p>Fully Customizable</p>
+          </div>
+          <div class="pricing-price">
+            <span class="period" style="font-size: 16px; margin-right: 8px;">Starting at</span>
+            <span class="currency">₹</span>
+            <span class="amount">35,000</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Everything in Growth</li>
+            <li><i class="fas fa-check"></i> Multi-Project Portfolio</li>
+            <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
+            <li><i class="fas fa-check"></i> WhatsApp Automation</li>
+            <li><i class="fas fa-check"></i> Meta Ads + Google Ads</li>
+            <li><i class="fas fa-check"></i> Custom Integrations</li>
+            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+            <li><i class="fas fa-check"></i> Monthly Strategy Calls</li>
+            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtitle">Everything you need to know about our services</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does it take to build a real estate website?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Typically, a custom real estate website takes 3-4 weeks from concept to launch. This includes design,
+              development, content integration, and testing. Complex projects with CRM integration may take 6-8 weeks.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you provide ongoing support and maintenance?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! All our packages include ongoing support, maintenance, security updates, and regular performance
+              optimization. You'll have direct access to our support team.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you help with lead generation and marketing?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! We specialize in performance marketing with Google Ads, Meta Ads, SEO, and lead automation
+              systems that are specifically optimized for real estate businesses.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What makes your real estate CRM different?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our CRM is built specifically for real estate with features like property-lead matching, automated
+              follow-ups, site visit scheduling, and integration with your website and ad campaigns.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer custom packages?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We understand every real estate business is unique. Contact us for a customized package tailored to
+              your specific needs and budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Let's Grow Your Real Estate Business</h2>
+          <p>Book a free 30-minute strategy call to discuss your project goals and how we can help you achieve them.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Call Us</h4>
+                <a href="tel:+919674994033">+91 96749 94033</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <a href="mailto:Estatewebly@gmail.com">Estatewebly@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/919674994033">Chat Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 96749 94033" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Select Project Type</option>
+                <option value="website">Real Estate Website</option>
+                <option value="crm">CRM Development</option>
+                <option value="marketing">Performance Marketing</option>
+                <option value="automation">Lead Automation</option>
+                <option value="seo">SEO Services</option>
+                <option value="complete">Complete Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select Budget Range</option>
+                <option value="50k">Under ₹50,000</option>
+                <option value="50k-1l">₹50,000 - ₹1,00,000</option>
+                <option value="1l-2l">₹1,00,000 - ₹2,00,000</option>
+                <option value="2l+">₹2,00,000+</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Tell us about your project</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">🏢</span>
+            <span class="logo-text">Estate<span class="highlight">Webly</span></span>
+          </div>
+          <p>Digital growth solutions for real estate brands. We build websites, CRM systems, and marketing campaigns
+            that generate qualified property leads.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">CRM Development</a></li>
+            <li><a href="#services">Lead Automation</a></li>
+            <li><a href="#services">Performance Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="tel:+919674994033">+91 96749 94033</a></li>
+            <li><a href="mailto:Estatewebly@gmail.com">Estatewebly@gmail.com</a></li>
+            <li><a href="https://wa.me/919674994033">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EstateWebly. All rights reserved.</p>
+        <p>Designed & Developed with <span class="heart">❤️</span> for Real Estate Success</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
